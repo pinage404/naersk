@@ -161,6 +161,11 @@ let
         doCheck = true;
       };
 
+      cargo-release = naersk.buildPackage {
+        src = ./test/cargo-release;
+        doCheck = true;
+      };
+
       dummyfication = naersk.buildPackage {
         src = ./test/dummyfication;
         doCheck = true;
